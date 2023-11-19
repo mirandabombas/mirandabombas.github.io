@@ -39,13 +39,9 @@ footer {
   color: #95B9E1;
 }
 
-.hvr-fade:hover {
+.btn:hover {
   background-color: #2D70C8;
   color: #FFF;
-}
-
-.hvr-float-shadow:hover {
-  z-index: 1;
 }
 
 .panel-body {
@@ -71,4 +67,29 @@ footer {
 }
 .carousel-indicators .active {
     background-color: #ff8a00;
+}
+
+.hover-float-shadow {
+  transition: transform 0.3s;
+  z-index: 1;
+}
+.hover-float-shadow::before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center,rgba(0,0,0,.35) 0,transparent 80%);
+  transition: inherit;
+}
+.hover-float-shadow:hover {
+  transform: translateY(-5px);
+}
+.hover-float-shadow:hover::before {
+  opacity: 1;
+  transform: translateY(5px);
 }
