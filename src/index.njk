@@ -1,0 +1,155 @@
+---
+layout: layouts/base.njk
+documentTitle: Miranda Bombas · Motobombas, Boias Elétricas e Cloradores em Recife
+description: Miranda Bombas - Assistência técnica autorizada de motobombas e distribuidor de cloradores e boia elétrica.
+ogImage: og/bomba-bc98-detalhe.jpg
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Assistência técnica autorizada de motobombas</h1>
+      <p class="lead">Distribuidor de cloradores e boia elétrica, com mais de quatro décadas de experiência em Motobombas, Filtros, Cloradores e Boias Elétricas.</p>
+      <div class="actions">
+        <a class="btn btn-whatsapp" href="{{ site.whatsappUrl }}" target="_blank" rel="noopener">
+          {% icon "whatsapp" %}
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#produtos">Ver produtos</a>
+      </div>
+    </div>
+    <img class="hero-image-art" src="/images/bomba-bc98-detalhe.webp" alt="" width="550" height="400">
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40c120-20 240-30 360-20s240 40 360 40 240-30 360-40 240 0 360 20v40H0z"/>
+  </svg>
+</section>
+
+<section class="section" id="produtos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Catálogo</span>
+      <h2>Produtos</h2>
+    </div>
+
+    <div class="products">
+      {%- for product in products %}
+      <a class="product-card" href="/produtos/{{ product.slug }}.html">
+        <figure><img src="/images/{{ product.thumb.src }}" alt="" width="{{ product.thumb.width }}" height="{{ product.thumb.height }}"></figure>
+        <div class="body">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.summary }}</p>
+          <span class="more">Ver detalhes {% icon "arrow-right" %}</span>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="servicos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Serviços</h2>
+    </div>
+
+    <div class="services">
+      <article class="service">
+        <div class="service-icon">{% icon "shield" %}</div>
+        <h3>Assistência Técnica Autorizada</h3>
+        <ul class="tags">
+          <li>Schneider</li>
+          <li>Dancor</li>
+          <li>Loyal</li>
+        </ul>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">{% icon "wrench" %}</div>
+        <h3>Manutenção Preventiva e Corretiva de Motobombas</h3>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">{% icon "bolt" %}</div>
+        <h3>Rebobinamento de Motores</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="empresa">
+  <div class="container about">
+    <div class="about-text">
+      <span class="eyebrow">Quem somos</span>
+      <h2>Empresa</h2>
+      <p>Fundada em 1986 em Recife - PE, a Miranda Bombas acumula mais de quatro décadas de experiência na área de Motobombas, Filtros, Cloradores e Boias Elétricas, além de fornecer assistência técnica especializada.</p>
+      <p>Nosso compromisso é expandir a presença da empresa no mercado nacional, destacando-se pela produção da boia elétrica Loremplus, reconhecida pela sua qualidade excepcional. Nossa boia é projetada para prevenir infiltrações e assegurar a proteção eficaz da motobomba.</p>
+      <a class="btn btn-outline" href="/empresa.html">
+        Mais sobre a empresa
+        {% icon "arrow-right" %}
+      </a>
+    </div>
+    <div class="stat">
+      <strong>{{ site.foundingYear }}</strong>
+      <span>Fundada em Recife - PE, com mais de quatro décadas de experiência.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="contato">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Fale com a gente</span>
+      <h2>Contato</h2>
+    </div>
+
+    <div class="contact">
+      <div>
+        <address>
+          <ul class="contact-list">
+            <li>
+              <span class="service-icon">{% icon "map-pin" %}</span>
+              <div>
+                <span class="label">Endereço</span>
+                <a href="{{ site.mapsUrl }}" target="_blank" rel="noopener">{{ site.address.street }}<br>{{ site.address.city }} - {{ site.address.region }}</a>
+              </div>
+            </li>
+            <li>
+              <span class="service-icon">{% icon "phone" %}</span>
+              <div>
+                <span class="label">Telefones</span>
+                <span class="phones">
+                  {%- for phone in site.phones %}
+                  <a href="tel:{{ phone.tel }}">{{ phone.label }}</a>
+                  {%- endfor %}
+                </span>
+              </div>
+            </li>
+            <li>
+              <span class="service-icon">{% icon "mail" %}</span>
+              <div>
+                <span class="label">E-mail</span>
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+              </div>
+            </li>
+          </ul>
+        </address>
+
+        <div class="actions">
+          <a class="btn btn-whatsapp" href="{{ site.whatsappUrl }}" target="_blank" rel="noopener">
+            {% icon "whatsapp" %}
+            WhatsApp
+          </a>
+          <a class="btn btn-outline" href="mailto:{{ site.email }}">
+            {% icon "mail" %}
+            Fale Conosco
+          </a>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe title="Localização da Miranda Bombas no mapa" src="{{ site.mapEmbedUrl }}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

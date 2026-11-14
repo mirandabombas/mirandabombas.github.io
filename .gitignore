@@ -1,2 +1,2 @@
-resources/
-output/
+node_modules/
+_site/
