@@ -1,7 +1,7 @@
 # Miranda Bombas
 
 Website for [www.mirandabombas.com.br](https://www.mirandabombas.com.br): plain HTML pages
-with a shared layout, and no client-side JavaScript.
+with a shared layout, and only a few lines of client-side JavaScript (the mobile header, in `layout/base.html`).
 
 ## Development
 

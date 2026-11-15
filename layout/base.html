@@ -40,6 +40,20 @@
   </main>
 
   {{template "footer" .}}
+
+  <script>
+    // Phones: hide the header links while scrolling down, show them again on scroll up.
+    (() => {
+      const header = document.querySelector(".site-header");
+      let lastY = scrollY;
+      addEventListener("scroll", () => {
+        const y = scrollY;
+        if (Math.abs(y - lastY) < 8) return;
+        header.classList.toggle("is-compact", y > lastY && y > 40);
+        lastY = y;
+      }, { passive: true });
+    })();
+  </script>
 </body>
 
 </html>
