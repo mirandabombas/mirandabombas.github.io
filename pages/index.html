@@ -1,0 +1,199 @@
+{{define "title"}}Miranda Bombas · Motobombas, Boias Elétricas e Cloradores em Recife{{end}}
+{{define "description"}}Miranda Bombas - Assistência técnica autorizada de motobombas e distribuidor de cloradores e boia elétrica.{{end}}
+
+{{define "head"}}
+  <meta property="og:image" content="https://www.mirandabombas.com.br/images/og/bomba-bc98-detalhe.jpg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Miranda Bombas",
+      "description": "Assistência técnica autorizada de motobombas e distribuidor de cloradores e boia elétrica.",
+      "url": "https://www.mirandabombas.com.br/",
+      "logo": "https://www.mirandabombas.com.br/images/logo.webp",
+      "email": "mirandabombas@hotmail.com",
+      "telephone": ["+558134281067", "+558134281747", "+5581988371067"],
+      "foundingDate": "1986",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Cosme Viana, 298, Afogados",
+        "addressLocality": "Recife",
+        "addressRegion": "PE",
+        "addressCountry": "BR"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -8.0731972, "longitude": -34.909049 }
+    }
+  </script>
+{{- end}}
+
+{{define "content" -}}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Assistência técnica autorizada de motobombas</h1>
+      <p class="lead">Distribuidor de cloradores e boia elétrica, com mais de quatro décadas de experiência em Motobombas, Filtros, Cloradores e Boias Elétricas.</p>
+      <div class="actions">
+        <a class="btn btn-whatsapp" href="https://wa.me/5581988371067?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Miranda%20Bombas." target="_blank" rel="noopener">
+          {{template "icon-whatsapp"}}
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+    <img class="hero-image-art" src="/images/bomba-bc98-detalhe.webp" alt="" width="550" height="400">
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40c120-20 240-30 360-20s240 40 360 40 240-30 360-40 240 0 360 20v40H0z"/>
+  </svg>
+</section>
+
+<section class="section" id="produtos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Catálogo</span>
+      <h2>Produtos</h2>
+    </div>
+
+    <div class="products">
+      <a class="product-card" href="/produtos/boia.html">
+        <figure><img src="/images/boia.webp" alt="" width="180" height="191"></figure>
+        <div class="body">
+          <h3>Boia Elétrica</h3>
+          <p>Boia elétrica universal Loremplus de excelente qualidade, projetada para evitar infiltrações e garantir a proteção da motobomba.</p>
+          <span class="more">Ver detalhes {{template "icon-arrow-right"}}</span>
+        </div>
+      </a>
+      <a class="product-card" href="/produtos/clorador.html">
+        <figure><img src="/images/clorador.webp" alt="" width="240" height="191"></figure>
+        <div class="body">
+          <h3>Clorador de Pastilha</h3>
+          <p>Clorador automático de pastilha para poço com tubulação de 25 mm e 32 mm.</p>
+          <span class="more">Ver detalhes {{template "icon-arrow-right"}}</span>
+        </div>
+      </a>
+      <a class="product-card" href="/produtos/bomba-sapo.html">
+        <figure><img src="/images/bomba-sapo.webp" alt="" width="160" height="191"></figure>
+        <div class="body">
+          <h3>Bomba Sapo</h3>
+          <p>Bomba submersível, modelos MB 650 e MB 950.</p>
+          <span class="more">Ver detalhes {{template "icon-arrow-right"}}</span>
+        </div>
+      </a>
+      <a class="product-card" href="/produtos/motobombas.html">
+        <figure><img src="/images/bomba-bc98.webp" alt="" width="160" height="191"></figure>
+        <div class="body">
+          <h3>Motobombas</h3>
+          <p>Linha completa das motobombas centrífugas Schneider.</p>
+          <span class="more">Ver detalhes {{template "icon-arrow-right"}}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="servicos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Serviços</h2>
+    </div>
+
+    <div class="services">
+      <article class="service">
+        <div class="service-icon">{{template "icon-shield"}}</div>
+        <h3>Assistência Técnica Autorizada</h3>
+        <ul class="tags">
+          <li>Schneider</li>
+          <li>Dancor</li>
+          <li>Loyal</li>
+        </ul>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">{{template "icon-wrench"}}</div>
+        <h3>Manutenção Preventiva e Corretiva de Motobombas</h3>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">{{template "icon-bolt"}}</div>
+        <h3>Rebobinamento de Motores</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="empresa">
+  <div class="container about">
+    <div class="about-text">
+      <span class="eyebrow">Quem somos</span>
+      <h2>Empresa</h2>
+      {{template "empresa-intro"}}
+      <a class="btn btn-outline" href="/empresa.html">
+        Mais sobre a empresa
+        {{template "icon-arrow-right"}}
+      </a>
+    </div>
+    <div class="stat">
+      <strong>1986</strong>
+      <span>Fundada em Recife - PE, com mais de quatro décadas de experiência.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="contato">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Fale com a gente</span>
+      <h2>Contato</h2>
+    </div>
+
+    <div class="contact">
+      <div>
+        <address>
+          <ul class="contact-list">
+            <li>
+              <span class="service-icon">{{template "icon-map-pin"}}</span>
+              <div>
+                <span class="label">Endereço</span>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Miranda+Bombas+Av.+Cosme+Viana+298+Recife" target="_blank" rel="noopener">Av. Cosme Viana, 298, Afogados<br>Recife - PE</a>
+              </div>
+            </li>
+            <li>
+              <span class="service-icon">{{template "icon-phone"}}</span>
+              <div>
+                <span class="label">Telefones</span>
+                <span class="phones">
+                  <a href="tel:+558134281067">(81) 3428-1067</a>
+                  <a href="tel:+558134281747">(81) 3428-1747</a>
+                  <a href="tel:+5581988371067">(81) 98837-1067</a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <span class="service-icon">{{template "icon-mail"}}</span>
+              <div>
+                <span class="label">E-mail</span>
+                <a href="mailto:mirandabombas@hotmail.com">mirandabombas@hotmail.com</a>
+              </div>
+            </li>
+          </ul>
+        </address>
+
+        <div class="actions">
+          <a class="btn btn-whatsapp" href="https://wa.me/5581988371067?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Miranda%20Bombas." target="_blank" rel="noopener">
+            {{template "icon-whatsapp"}}
+            WhatsApp
+          </a>
+          <a class="btn btn-outline" href="mailto:mirandabombas@hotmail.com">
+            {{template "icon-mail"}}
+            Fale Conosco
+          </a>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe title="Localização da Miranda Bombas no mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15801.108306283091!2d-34.909049!3d-8.0731972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f59984c56e5%3A0x7da07c1e1af54905!2sMiranda%20bombas!5e0!3m2!1spt-BR!2sde!4v1700339511361!5m2!1spt-BR!2sde" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+{{- end}}

@@ -1,0 +1,46 @@
+{{/*
+  Page skeleton. Each file in pages/ defines:
+    "title"        <title> and link preview title
+    "description"  meta description and link preview text
+    "content"      everything inside <main>
+    "head"         (optional) extra tags for <head>, e.g. og:image
+*/}}
+{{define "base" -}}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{template "title" .}}</title>
+  <meta name="description" content="{{template "description" .}}">
+  <meta name="author" content="André Miranda">
+  <meta name="theme-color" content="#1a5199">
+  <link rel="canonical" href="https://www.mirandabombas.com.br{{.Path}}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Miranda Bombas">
+  <meta property="og:title" content="{{template "title" .}}">
+  <meta property="og:description" content="{{template "description" .}}">
+  <meta property="og:url" content="https://www.mirandabombas.com.br{{.Path}}">
+  {{- block "head" .}}{{end}}
+
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  {{template "header" .}}
+
+  <main id="conteudo">
+    {{template "content" .}}
+  </main>
+
+  {{template "footer" .}}
+</body>
+
+</html>
+{{end}}

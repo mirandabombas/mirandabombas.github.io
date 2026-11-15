@@ -1,0 +1,64 @@
+{{define "title"}}Boia Elétrica · Miranda Bombas{{end}}
+{{define "description"}}Boia elétrica universal Loremplus de excelente qualidade, projetada para evitar infiltrações e garantir a proteção da motobomba.{{end}}
+
+{{define "head"}}
+  <meta property="og:image" content="https://www.mirandabombas.com.br/images/og/boia-detalhe1.jpg">
+{{- end}}
+
+{{define "content" -}}
+<div class="page-hero">
+  <div class="container">
+    <a class="breadcrumb" href="/#produtos">{{template "icon-arrow-left"}} Produtos</a>
+    <h1>Boia Elétrica</h1>
+  </div>
+</div>
+
+<div class="container page-body">
+  <div class="product-layout">
+    <div>
+      <ul class="gallery" aria-label="Fotos" tabindex="0">
+        <li><img src="/images/boia-detalhe1.webp" alt="Boia elétrica Loremplus - foto 1" width="550" height="400"></li>
+        <li><img src="/images/boia-detalhe2.webp" alt="Boia elétrica Loremplus - foto 2" width="550" height="400" loading="lazy"></li>
+      </ul>
+      <p class="gallery-hint">Deslize para ver mais fotos (2)</p>
+    </div>
+
+    <div>
+      <section class="panel">
+        <h2>Descrição</h2>
+        <p>Boia elétrica universal Loremplus de excelente qualidade, projetada para evitar infiltrações e garantir a proteção da motobomba.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Detalhes Técnicos</h2>
+        <ul class="checklist">
+          <li>Não contém mercúrio</li>
+          <li>Controle de nível inferior ou superior</li>
+          <li>Capacidade elétrica do interruptor até 25A ~250V</li>
+          <li>Cabo flexível pp 3 x 1 mm² ~250V</li>
+          <li>Blindagem tripla</li>
+          <li>6 meses de garantia</li>
+        </ul>
+      </section>
+
+      <section class="panel panel-warning">
+        <h2>Atenção</h2>
+        <ul class="checklist">
+          <li>É obrigatório o uso de chave contatora com relê de sobrecarga para qualquer potência de motobomba.</li>
+          <li>Recomendamos contratar profissionais qualificados para executar a instalação do equipamento.</li>
+          <li>Nunca instalar diretamente na ligação do motor independente da potência.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Instalação</h2>
+        <div class="install-images">
+          <a href="/images/boia-instalacao.webp" target="_blank" rel="noopener"><img src="/images/boia-instalacao.webp" alt="Esquema de instalação da boia elétrica" width="860" height="744" loading="lazy"></a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {{template "cta"}}
+</div>
+{{- end}}

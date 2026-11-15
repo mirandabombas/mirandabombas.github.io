@@ -1,0 +1,57 @@
+{{define "title"}}Bomba Sapo · Miranda Bombas{{end}}
+{{define "description"}}Bomba submersível, modelos MB 650 e MB 950.{{end}}
+
+{{define "head"}}
+  <meta property="og:image" content="https://www.mirandabombas.com.br/images/og/bomba-sapo-detalhe1.jpg">
+{{- end}}
+
+{{define "content" -}}
+<div class="page-hero">
+  <div class="container">
+    <a class="breadcrumb" href="/#produtos">{{template "icon-arrow-left"}} Produtos</a>
+    <h1>Bomba Sapo</h1>
+  </div>
+</div>
+
+<div class="container page-body">
+  <div class="product-layout">
+    <div>
+      <ul class="gallery" aria-label="Fotos" tabindex="0">
+        <li><img src="/images/bomba-sapo-detalhe1.webp" alt="Bomba Sapo submersível - foto 1" width="510" height="400"></li>
+        <li><img src="/images/bomba-sapo-detalhe2.webp" alt="Bomba Sapo submersível - foto 2" width="510" height="400" loading="lazy"></li>
+      </ul>
+      <p class="gallery-hint">Deslize para ver mais fotos (2)</p>
+    </div>
+
+    <div>
+      <section class="panel">
+        <h2>Descrição</h2>
+        <p>Bomba submersível, modelos MB 650 e MB 950.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Detalhes Técnicos</h2>
+        <ul class="checklist">
+          <li>Consumo 340W</li>
+          <li>Tensão nominal 220V</li>
+          <li>Frequência 60hz</li>
+          <li>Capacidade até 1.200l/h</li>
+          <li>Elevação até 65m</li>
+          <li>Peso 5,5kg</li>
+          <li>Garantia de 6 meses apenas para eventuais defeitos de fabricação.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Instalação</h2>
+        <div class="install-images">
+          <a href="/images/bomba-sapo-instalacao.webp" target="_blank" rel="noopener"><img src="/images/bomba-sapo-instalacao.webp" alt="Esquema de instalação da Bomba Sapo" width="497" height="634" loading="lazy"></a>
+          <a href="/images/bomba-sapo-instalacao2.webp" target="_blank" rel="noopener"><img src="/images/bomba-sapo-instalacao2.webp" alt="Esquema de instalação da Bomba Sapo" width="850" height="516" loading="lazy"></a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {{template "cta"}}
+</div>
+{{- end}}

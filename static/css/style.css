@@ -10,7 +10,6 @@
   --blue-100: #e6f0fb;
   --blue-50: #f3f8fd;
   --orange: #f08300;
-  --orange-dark: #c96d00;
   --green: #1a8d4c;
   --green-dark: #136e3a;
   --red-50: #fdf1f0;
@@ -213,27 +212,6 @@ a:hover {
 
 .btn:hover {
   transform: translateY(-1px);
-}
-
-.btn-primary {
-  background: var(--orange);
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: var(--orange-dark);
-  color: #fff;
-}
-
-.btn-ghost {
-  border-color: rgb(255 255 255 / 0.5);
-  color: #fff;
-}
-
-.btn-ghost:hover {
-  border-color: #fff;
-  background: rgb(255 255 255 / 0.1);
-  color: #fff;
 }
 
 .btn-outline {
@@ -667,8 +645,7 @@ a:hover {
     gap: 48px;
   }
 
-  .product-layout > .gallery,
-  .product-layout > .hero-image {
+  .product-layout > :first-child {
     position: sticky;
     top: calc(var(--header-h) + 24px);
   }
