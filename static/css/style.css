@@ -172,6 +172,15 @@ a:hover {
   background: rgb(255 255 255 / 0.14);
 }
 
+.site-nav a.nav-store {
+  background: rgb(255 255 255 / 0.16);
+  opacity: 1;
+}
+
+.site-nav a.nav-store:hover {
+  background: rgb(255 255 255 / 0.26);
+}
+
 @media (max-width: 720px) {
   .site-header .container {
     flex-direction: column;
